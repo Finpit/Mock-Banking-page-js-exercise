@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Banking</title>
+    <script type="module" src="indexv2.js"></script>
+</head>
+<body>
+    <h2>Welcome to The Bank!</h2>
+    <form>
+        <label>Choose Account:</label><br>
+        <input type="radio" id="None" name="accountchoosing" value="None" onclick="choosingNone()">
+        <label for="None">None</label><br>
+        <input type="radio" id="John" name="accountchoosing" value="John" onclick="choosingJohn()">
+        <label for="John">John</label><br>
+        <input type="radio" id="Andrea" name="accountchoosing" value="Andrea" onclick="choosingAndrea()">
+        <label for="Andrea">Andrea</label><br>
+        <input type="radio" id="Garfield" name="accountchoosing" value="Garfield" onclick="choosingGarfield()">
+        <label for="Garfield">Garfield</label><br>
+        <!--<input type="submit" value="Submit">-->
+    </form><br>
+    <button onclick="runDeposit()">Press to deposit 30</button><br><br>
+    <button onclick="runWithdraw()">Press to withdraw 20</button><br><br>
+    <button onclick="displayBalance()">Press to see account balance</button>
+</body>
+</html>
