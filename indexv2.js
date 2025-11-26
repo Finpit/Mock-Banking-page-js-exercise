@@ -28,19 +28,19 @@ BankAccount();
 }*/
 
 //Creating object for John's Bank Account & Printing John's Account properties to console
-const accountOfJohn = new BankAccount("123456", "John", 500);
+let accountOfJohn = new BankAccount("123456", "John", 500);
 console.log("John Account Number: " + accountOfJohn.accountNumber);
 console.log("John Account name: " + accountOfJohn.accountHolder);
 console.log("John Start balance: " + accountOfJohn.balance);
 
 //Creating object for Andrea's Bank Account & Printing Andrea's Account properties to console
-const accountOfAndrea = new BankAccount("654321", "Andrea", 1000);
+let accountOfAndrea = new BankAccount("654321", "Andrea", 1000);
 console.log("Andrea Account Number: " + accountOfAndrea.accountNumber);
 console.log("Andrea Account name: " + accountOfAndrea.accountHolder);
 console.log("Andrea Start balance: " + accountOfAndrea.balance);
 
 //Creating object for Garfield's Bank Account & Printing Garfield's Account properties to console
-const accountOfGarfield = new BankAccount("555555", "Garfield", 5000);
+let accountOfGarfield = new BankAccount("555555", "Garfield", 5000);
 console.log("Garfield Account Number: " + accountOfGarfield.accountNumber);
 console.log("Garfield Account name: " + accountOfGarfield.accountHolder);
 console.log("Garfield Start balance: " + accountOfGarfield.balance);
