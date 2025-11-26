@@ -1,9 +1,9 @@
 //Import class from bankAccount.js
-import {BankAccount} from "./bankAccount";
-BankAccount();
+/*import {BankAccount} from "./bankAccount";
+BankAccount();*/
 
 //Backup class creation
-/*class BankAccount{
+class BankAccount{
     constructor(accountNumber, accountHolder, balance){
         this.accountNumber = accountNumber;
         this.accountHolder = accountHolder;
@@ -25,7 +25,7 @@ BankAccount();
     showBalance(){
         console.log(this.balance);
     }
-}*/
+}
 
 //Creating object for John's Bank Account & Printing John's Account properties to console
 const accountOfJohn = new BankAccount("123456", "John", 500);
