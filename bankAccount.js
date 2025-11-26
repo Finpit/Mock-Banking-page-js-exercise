@@ -1,4 +1,4 @@
-//Create class
+//Create class to export
 export class BankAccount{
     constructor(accountNumber, accountHolder, balance){
         this.accountNumber = accountNumber;

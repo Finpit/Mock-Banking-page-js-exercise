@@ -1,6 +1,8 @@
+//Import class from bankAccount.js
 import {BankAccount} from "./bankAccount.js";
 BankAccount()
 
+//Backup class creation
 /*class BankAccount{
     constructor(accountNumber, accountHolder, balance){
         this.accountNumber = accountNumber;
