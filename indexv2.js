@@ -1,6 +1,6 @@
 //Import class from bankAccount.js
 import { BankAccount } from "./bankAccount.js";
-new BankAccount();
+/*new BankAccount();*/
 
 //Backup class creation
 /*class BankAccount{
@@ -28,19 +28,19 @@ new BankAccount();
 }*/
 
 //Creating object for John's Bank Account & Printing John's Account properties to console
-let accountOfJohn = new BankAccount("123456", "John", 500);
+const accountOfJohn = new BankAccount("123456", "John", 500);
 console.log("John Account Number: " + accountOfJohn.accountNumber);
 console.log("John Account name: " + accountOfJohn.accountHolder);
 console.log("John Start balance: " + accountOfJohn.balance);
 
 //Creating object for Andrea's Bank Account & Printing Andrea's Account properties to console
-let accountOfAndrea = new BankAccount("654321", "Andrea", 1000);
+const accountOfAndrea = new BankAccount("654321", "Andrea", 1000);
 console.log("Andrea Account Number: " + accountOfAndrea.accountNumber);
 console.log("Andrea Account name: " + accountOfAndrea.accountHolder);
 console.log("Andrea Start balance: " + accountOfAndrea.balance);
 
 //Creating object for Garfield's Bank Account & Printing Garfield's Account properties to console
-let accountOfGarfield = new BankAccount("555555", "Garfield", 5000);
+const accountOfGarfield = new BankAccount("555555", "Garfield", 5000);
 console.log("Garfield Account Number: " + accountOfGarfield.accountNumber);
 console.log("Garfield Account name: " + accountOfGarfield.accountHolder);
 console.log("Garfield Start balance: " + accountOfGarfield.balance);
@@ -68,7 +68,13 @@ function choosingNone(){
     chosenAccount = "";
     console.log("None Chosen");
 }
-
+globalThis.choosingJohn = choosingJohn;
+globalThis.choosingAndrea = choosingAndrea;
+globalThis.choosingGarfield = choosingGarfield;
+globalThis.choosingNone = choosingNone;
+globalThis.runDeposit = runDeposit;
+globalThis.runWithdraw = runWithdraw;
+globalThis.displayBalance = displayBalance;
 //Deposit button function
 function runDeposit(){
     switch(chosenAccount){
