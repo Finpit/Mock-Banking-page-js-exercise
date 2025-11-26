@@ -1,5 +1,5 @@
 //Import class from bankAccount.js
-import {BankAccount} from "./bankAccount";
+import { BankAccount } from "./bankAccount";
 BankAccount();
 
 //Backup class creation
